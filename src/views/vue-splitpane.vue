@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h3 class="">vue-splitpane</h3>
+    <h3>vue-splitpane</h3>
+    <div>vue-splitpane主要是在页面展示一个或多个被分割的区块</div>
+    
     <split-pane
       v-on:resize="resize"
       :min-percent="20"
@@ -38,14 +40,6 @@ export default {
   components: {
     splitPane,
   },
-  props: {},
-  data() {
-    return {};
-  },
-  computed: {},
-  watch: {},
-  created() {},
-  mounted() {},
   methods: {
     resize() {
       console.log('resize');
@@ -55,8 +49,4 @@ export default {
 </script>
 
 <style scoped>
-  .label-height{
-    height: 100px;
-    color: red;
-  }
 </style>
