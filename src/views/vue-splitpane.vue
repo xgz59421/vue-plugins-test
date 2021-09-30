@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>vue-splitpane</h3>
-    <div>vue-splitpane主要是在页面展示一个或多个被分割的区块</div>
+    <div>vue-splitpane 在页面展示一个或多个被分割的区块</div>
     
     <split-pane
       v-on:resize="resize"
@@ -9,8 +9,12 @@
       :default-percent="50"
       split="vertical"
     >
-      <template slot="paneL"> A </template>
-      <template slot="paneR"> B </template>
+      <template slot="paneL">
+        <div class="border"> A </div>
+      </template>
+      <template slot="paneR">
+        <div class="border"> B </div>
+      </template>
     </split-pane>
 
     <!-- 嵌套 -->
@@ -49,4 +53,7 @@ export default {
 </script>
 
 <style scoped>
+  .border {
+    border: 1px solid red;
+  }
 </style>

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -10,19 +10,24 @@ const routes = [
   //   name: 'Home',
   //   component: Home
   // },
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  // }
+
+  // 一个轻量级的，稳健的，优雅简洁的语法高亮插件
   {
-    path: '/',
-    name: 'vue-splitpane',
-    component: () => import(/* webpackChunkName: "vue-splitpane" */ '../views/vue-splitpane.vue')
+    path: '/prismjs',
+    component: () => import('../views/prismjs.vue')
   },
+
+  // 在页面展示一个或多个被分割的区块
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/vue-splitpane',
+    component: () => import('../views/vue-splitpane.vue')
+  },
+
 ]
 
 const router = new VueRouter({

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "prismjs": "^1.25.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-splitpane": "^1.0.6",
@@ -19,6 +20,7 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "babel-plugin-prismjs": "^2.1.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
