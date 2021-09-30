@@ -5,10 +5,15 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'Home',
+  //   component: Home
+  // },
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'vue-splitpane',
+    component: () => import(/* webpackChunkName: "vue-splitpane" */ '../views/vue-splitpane.vue')
   },
   {
     path: '/about',
