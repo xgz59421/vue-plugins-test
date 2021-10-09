@@ -1,19 +1,6 @@
-# vue-plugins-test
+prismjs 一个轻量级的，稳健的，优雅简洁的语法高亮插件
 
-## Project setup
-```
-npm install
-```
+vue-splitpane 在页面展示一个或多个被分割的区块
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+mock 模拟数据
+npm install mockjs --save-dev

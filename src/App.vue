@@ -8,6 +8,26 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    // axios test
+    // this.$http.get('http://jsonplaceholder.typicode.com/users')
+    // .then(res => {
+    //   console.log(res)
+    // })
+    // .catch(err => {
+    //   console.error(err); 
+    // })
+
+    // mock test
+    this.$http.get('/home/getData').then(res => {
+      console.log(res);
+    })
+  },
+}
+</script>
+
 // <style lang="less">
 // #app {
 //   font-family: Avenir, Helvetica, Arial, sans-serif;
