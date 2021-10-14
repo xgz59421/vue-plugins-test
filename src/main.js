@@ -9,8 +9,12 @@ import 'normalize.css/normalize.css'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'; 
-
 import i18n from './utils/i18n'
+import components from '@/components'
+
+components.forEach(comp => {
+  Vue.use(comp)
+});
 
 Vue.use(ElementUI, { size: 'small', zIndex: 3000 });
 Vue.use(ElementUI, {

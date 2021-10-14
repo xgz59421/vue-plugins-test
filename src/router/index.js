@@ -28,6 +28,11 @@ const routes = [
         path: '/mock',
         component: () => import('@/views/mock.vue')
       },
+      // cnfubutton
+      {
+        path: '/cnfubutton',
+        component: () => import('@/views/cnfu/cnfuButtonExample.vue')
+      },
     ]
   },
   // {
