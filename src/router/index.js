@@ -33,6 +33,18 @@ const routes = [
         path: '/cnfubutton',
         component: () => import('@/views/cnfu/cnfuButtonExample.vue')
       },
+      {
+        path: '/cnfuinput',
+        component: () => import('@/views/cnfu/cnfuInputExample.vue')
+      },
+      {
+        path: '/cnfuintinput',
+        component: () => import('@/views/cnfu/cnfuIntInputExample.vue')
+      },
+      {
+        path: '/cnfudecimalinput',
+        component: () => import('@/views/cnfu/cnfuDecimalInputExample.vue')
+      },
     ]
   },
   // {

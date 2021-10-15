@@ -1,6 +1,6 @@
 <template>
   <el-aside width="200px">
-    <el-menu :default-openeds="['1']" router>
+    <el-menu :default-openeds="['1', '2']" router>
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-menu"></i>
@@ -30,6 +30,18 @@
         <el-menu-item index="/cnfubutton">
           <i class="el-icon-setting"></i>
           <span slot="title">按钮</span>
+        </el-menu-item>
+        <el-menu-item index="/cnfuinput">
+          <i class="el-icon-setting"></i>
+          <span slot="title">普通输入框</span>
+        </el-menu-item>
+        <el-menu-item index="/cnfuintinput">
+          <i class="el-icon-setting"></i>
+          <span slot="title">整数输入框</span>
+        </el-menu-item>
+        <el-menu-item index="/cnfudecimalinput">
+          <i class="el-icon-setting"></i>
+          <span slot="title">浮点输入框</span>
         </el-menu-item>
         
       </el-submenu>
