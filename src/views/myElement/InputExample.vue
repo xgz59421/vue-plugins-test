@@ -1,13 +1,13 @@
 <template>
   <div>
     <h3>普通输入框</h3>
-      <cnfu-input v-model="inputdata" style="width: 260px"></cnfu-input>
+      <normal-input v-model="inputdata" style="width: 260px"></normal-input>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CnfuInputExample",
+  name: "InputExample",
   data() {
     return {
       inputdata: ''

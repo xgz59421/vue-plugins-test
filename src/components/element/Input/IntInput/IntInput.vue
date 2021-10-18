@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'CnfuIntInput',
+  name: 'IntInput',
   props: {
     placeholder: {type: String, default: ''},
     value: {type: [String, Number], default: ''}

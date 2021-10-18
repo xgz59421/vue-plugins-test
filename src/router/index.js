@@ -28,22 +28,22 @@ const routes = [
         path: '/mock',
         component: () => import('@/views/mock.vue')
       },
-      // cnfubutton
+      // 自定义组件
       {
-        path: '/cnfubutton',
-        component: () => import('@/views/cnfu/cnfuButtonExample.vue')
+        path: '/button',
+        component: () => import('@/views/myElement/ButtonExample.vue')
       },
       {
-        path: '/cnfuinput',
-        component: () => import('@/views/cnfu/cnfuInputExample.vue')
+        path: '/input',
+        component: () => import('@/views/myElement/InputExample.vue')
       },
       {
-        path: '/cnfuintinput',
-        component: () => import('@/views/cnfu/cnfuIntInputExample.vue')
+        path: '/intinput',
+        component: () => import('@/views/myElement/IntInputExample.vue')
       },
       {
-        path: '/cnfudecimalinput',
-        component: () => import('@/views/cnfu/cnfuDecimalInputExample.vue')
+        path: '/decimalinput',
+        component: () => import('@/views/myElement/DecimalInputExample.vue')
       },
     ]
   },

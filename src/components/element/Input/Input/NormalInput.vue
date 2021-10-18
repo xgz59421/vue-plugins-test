@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'CnfuInput',
+  name: 'NormalInput',
   props: {
     placeholder: {
       type: String,

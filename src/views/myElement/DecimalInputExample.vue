@@ -1,12 +1,12 @@
 <template>
   <div>
     <h3>浮点输入框</h3>
-    <cnfu-decimal-input
+    <decimal-input
       v-model="inputdata"
       style="width: 260px"
       intLength="8"
       decLength="2"
-    ></cnfu-decimal-input>
+    ></decimal-input>
 
     <ul>
       <li>intLength: 整数位数</li>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "CnfuDecimalInputExample",
+  name: "DecimalInputExample",
   data() {
     return {
       inputdata: "",

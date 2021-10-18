@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'CnfuButton',
+  name: 'NormalButton',
 }
 </script>

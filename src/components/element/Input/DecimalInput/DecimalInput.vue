@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "CnfuDecimalInput",
+  name: "DecimalInput",
   props: {
     value: { type: [String, Number], default: "" },
     placeholder: { type: String, default: "" },

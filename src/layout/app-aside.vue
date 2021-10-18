@@ -27,19 +27,19 @@
       </el-submenu>
       <el-submenu index="2">
         <template slot="title"><i class="el-icon-menu"></i>组件</template>
-        <el-menu-item index="/cnfubutton">
+        <el-menu-item index="/button">
           <i class="el-icon-setting"></i>
           <span slot="title">按钮</span>
         </el-menu-item>
-        <el-menu-item index="/cnfuinput">
+        <el-menu-item index="/input">
           <i class="el-icon-setting"></i>
           <span slot="title">普通输入框</span>
         </el-menu-item>
-        <el-menu-item index="/cnfuintinput">
+        <el-menu-item index="/intinput">
           <i class="el-icon-setting"></i>
           <span slot="title">整数输入框</span>
         </el-menu-item>
-        <el-menu-item index="/cnfudecimalinput">
+        <el-menu-item index="/decimalinput">
           <i class="el-icon-setting"></i>
           <span slot="title">浮点输入框</span>
         </el-menu-item>
