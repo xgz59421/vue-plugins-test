@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
+    "dev": "vue-cli-service serve --mode dev",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "plop": "plop"
@@ -14,6 +14,7 @@
     "element-ui": "^2.15.6",
     "normalize.css": "^8.0.1",
     "prismjs": "^1.25.0",
+    "vconsole": "^3.9.5",
     "vue": "^2.6.11",
     "vue-i18n": "^8.26.5",
     "vue-router": "^3.2.0",
