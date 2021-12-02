@@ -10,23 +10,17 @@ const routes = {
       {
         path: '/prismjs',
         name: '语法高亮',
-        component: () => import('@/views/prismjs.vue')
-      },
-      // 在页面展示一个或多个被分割的区块
-      {
-        path: '/vue-splitpane',
-        name: '分割区块',
-        component: () => import('@/views/vue-splitpane.vue')
+        component: () => import('@/views/plugins/prismjs.vue')
       },
       {
         path: '/i18n',
         name: '国际化',
-        component: () => import('@/views/i18n.vue')
+        component: () => import('@/views/plugins/i18n.vue')
       },
       {
         path: '/mock',
         name: 'mock',
-        component: () => import('@/views/mock.vue')
+        component: () => import('@/views/plugins/mock.vue')
       }
     ]
   }
