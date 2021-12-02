@@ -12,6 +12,14 @@ const routes = {
         name: '.env配置',
         component: () => import('@/views/vue/env.vue')
       },
+      {
+        path: '/keep',
+        name: 'keep-alive',
+        meta: {
+          keepAlive: true
+        },
+        component: () => import('@/views/vue/keepAlive.vue')
+      },
     ]
   }
 

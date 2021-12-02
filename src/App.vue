@@ -4,7 +4,11 @@
       <router-link to="/prismjs">prismjs</router-link> |
       <router-link to="/vue-splitpane">vue-splitpane</router-link>
     </div> -->
-    <router-view/>
+    <!-- <router-view/> -->
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"/>
+    </keep-alive>
+      <router-view v-if="!$route.meta.keepAlive"/>
   </div>
 </template>
 
