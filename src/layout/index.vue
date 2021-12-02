@@ -1,7 +1,10 @@
 <template>
+  <!-- 外层容器 -->
   <el-container style="border: 1px solid #eee">
+    <!-- 侧边栏容器 -->
     <app-aside/>
     <el-container>
+      <!-- 顶栏容器 -->
       <el-header style="text-align: right; font-size: 12px">
         <el-dropdown>
           <i class="el-icon-setting" style="margin-right: 15px"></i>
@@ -13,7 +16,7 @@
         </el-dropdown>
         <span>王小虎</span>
       </el-header>
-
+      <!-- 主要区域容器 -->
       <el-main>
         <router-view/>
       </el-main>

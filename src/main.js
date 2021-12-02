@@ -13,10 +13,9 @@ import i18n from './utils/i18n'
 import components from '@/components'
 
 // 移动调试
-import VConsole from 'vconsole'
-Vue.use(new VConsole());
+// import VConsole from 'vconsole'
+// Vue.use(new VConsole());
 
-console.log('env配置: ', process.env);
 components.forEach(comp => {
   Vue.use(comp)
 });

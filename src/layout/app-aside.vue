@@ -1,7 +1,16 @@
 <template>
   <el-aside width="200px">
-    <el-menu :default-openeds="['1', '2']" router>
-      <el-submenu index="1">
+    <el-menu :default-active="$route.path" :default-openeds="openeds" router>
+      <!-- :index:'' 为字符串格式, 需要转换一下 -->
+      <el-submenu unique-opened='true' v-for="route in routes" :index="route.index+''" :key="route.index">
+        <template slot="title"><i class="el-icon-menu"></i>{{route.name}}</template>
+        <el-menu-item v-for="item in route.children" :key="item.path" :index="item.path">
+          <i class="el-icon-setting"></i>
+          <span slot="title">{{item.name}}</span>
+        </el-menu-item>
+      </el-submenu>
+
+      <!-- <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>插件</span>
@@ -22,8 +31,6 @@
           <i class="el-icon-setting"></i>
           <span slot="title">mock</span>
         </el-menu-item>
-
-        
       </el-submenu>
       <el-submenu index="2">
         <template slot="title"><i class="el-icon-menu"></i>组件</template>
@@ -43,7 +50,6 @@
           <i class="el-icon-setting"></i>
           <span slot="title">浮点输入框</span>
         </el-menu-item>
-        
       </el-submenu>
       <el-submenu index="3">
         <template slot="title"><i class="el-icon-menu"></i>example</template>
@@ -59,7 +65,7 @@
           <template slot="title">选项4</template>
           <el-menu-item index="2-4-1">选项4-1</el-menu-item>
         </el-submenu>
-      </el-submenu>
+      </el-submenu> -->
     </el-menu>
   </el-aside>
 </template>
@@ -70,14 +76,26 @@ export default {
   components: {},
   props: {},
   data() {
-    return {};
+    return {
+      routes: [],
+      // 默认展开的选项
+      openeds: []
+    };
   },
   computed: {},
   watch: {},
-  created() {},
+  created() {
+    this.routes = this.$router.options.routes
+    // this.routes.forEach(group => {
+    //   this.openeds.push(group.index+'')
+    // });
+  },
   mounted() {},
-  methods: {},
+  methods: {
+
+  },
 };
 </script>
 
-<style scoped></style>
+<style>
+</style>
