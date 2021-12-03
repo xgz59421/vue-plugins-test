@@ -21,6 +21,21 @@ const routes = {
         path: '/mock',
         name: 'mock',
         component: () => import('@/views/plugins/mock.vue')
+      },
+      {
+        path: '/qrcodejs2',
+        name: 'qrcodejs2',
+        component: () => import('@/views/plugins/qrcodejs2.vue')
+      },
+      {
+        path: '/vue-qr',
+        name: 'vue-qr',
+        component: () => import('@/views/plugins/vue-qr.vue')
+      },
+      {
+        path: '/vue-pdf',
+        name: 'vue-pdf',
+        component: () => import('@/views/plugins/vue-pdf.vue')
       }
     ]
   }
