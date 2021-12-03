@@ -4,7 +4,7 @@
       <!-- :index:'' 为字符串格式, 需要转换一下 -->
       <el-submenu unique-opened='true' v-for="route in routes" :index="route.index+''" :key="route.index">
         <template slot="title"><i class="el-icon-menu"></i>{{route.name}}</template>
-        <el-menu-item v-for="item in route.children" :key="item.path" :index="item.path">
+        <el-menu-item v-for="item in route.children" :key="item.name" :index="item.path">
           <i class="el-icon-setting"></i>
           <span slot="title">{{item.name}}</span>
         </el-menu-item>

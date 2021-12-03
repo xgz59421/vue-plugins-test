@@ -1,31 +1,16 @@
 import Layout from '@/layout/index.vue'
 
 const routes = {
-    index: 1,
+    index: 2,
     path: '/',
     component: Layout,
     name: '组件',
     children: [
-      // 自定义组件
+      // 一个轻量级的，稳健的，优雅简洁的语法高亮插件
       {
-        path: '/button',
-        name: '按钮',
-        component: () => import('@/views/components/el-button.vue')
-      },
-      {
-        path: '/input',
-        name: '普通输入框',
-        component: () => import('@/views/components/el-input.vue')
-      },
-      {
-        path: '/intinput',
-        name: '整数输入框',
-        component: () => import('@/views/components/el-int-input.vue')
-      },
-      {
-        path: '/decimalinput',
-        name: '浮点输入框',
-        component: () => import('@/views/components/el-decimal-nput.vue')
+        path: '/prismjs',
+        name: '语法高亮',
+        component: () => import('@/views/components/prismjs.vue')
       },
       {
         path: '/slicksort',
@@ -38,13 +23,23 @@ const routes = {
         name: '分割区块',
         component: () => import('@/views/components/vue-splitpane.vue')
       },
+      {
+        path: '/qrcodejs2',
+        name: 'qrcodejs2',
+        component: () => import('@/views/components/qrcodejs2.vue')
+      },
+      {
+        path: '/vue-qr',
+        name: 'vue-qr',
+        component: () => import('@/views/components/vue-qr.vue')
+      },
+      {
+        path: '/vue-pdf',
+        name: 'vue-pdf',
+        component: () => import('@/views/components/vue-pdf.vue')
+      }
     ]
   }
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
 
 
 export default routes
