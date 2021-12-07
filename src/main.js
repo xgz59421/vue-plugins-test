@@ -12,6 +12,9 @@ import 'element-ui/lib/theme-chalk/index.css';
 import i18n from './utils/i18n'
 import components from '@/components'
 
+// import 'vant/lib/index.css';
+// import Vant from 'vant';
+// Vue.use(Vant);
 
 // 移动调试
 // import VConsole from 'vconsole'
