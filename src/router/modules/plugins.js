@@ -15,6 +15,11 @@ const routes = {
         path: '/mock',
         name: 'mock',
         component: () => import('@/views/plugins/mock.vue')
+      },
+      {
+        path: '/moment',
+        name: 'moment',
+        component: () => import('@/views/plugins/moment.vue')
       }
     ]
   }
