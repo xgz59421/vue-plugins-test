@@ -20,6 +20,11 @@ const routes = {
         path: '/moment',
         name: 'moment',
         component: () => import('@/views/plugins/moment.vue')
+      },
+      {
+        path: '/dayjs',
+        name: 'dayjs',
+        component: () => import('@/views/plugins/dayjs.vue')
       }
     ]
   }
