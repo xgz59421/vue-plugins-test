@@ -13,6 +13,16 @@ const routes = {
         component: () => import('@/views/components/prismjs.vue')
       },
       {
+        path: '/fileExport',
+        name: '文件导出',
+        component: () => import('@/views/components/fileExport.vue')
+      },
+      {
+        path: '/fileDownload',
+        name: '文件下载',
+        component: () => import('@/views/components/fileDownload.vue')
+      },
+      {
         path: '/slicksort',
         name: '拖拽排序组件',
         component: () => import('@/views/components/vue-slicksort.vue')
