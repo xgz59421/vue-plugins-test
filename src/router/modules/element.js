@@ -25,7 +25,7 @@ const routes = {
       {
         path: '/decimalinput',
         name: '浮点输入框',
-        component: () => import('@/views/element/el-decimal-nput.vue')
+        component: () => import('@/views/element/el-decimal-input.vue')
       },
       {
         path: '/vue-cron',

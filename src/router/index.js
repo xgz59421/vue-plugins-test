@@ -6,10 +6,10 @@ let routes = []
 const files = require.context('./modules', true, /\.js$/)
 
 files.keys().forEach(key => {
-  routes = routes.concat(files(key).default)
+  if (key != './element.js') routes = routes.concat(files(key).default)
 });
 
-routes.sort((a, b)=>{
+routes.sort((a, b) => {
   return a.index - b.index
 })
 
