@@ -81,45 +81,12 @@
             type: 'category',
             gridIndex: 0
           }],
-          yAxis: [{
-            gridIndex: 0
-          }],
-          dataZoom: [{
-              type: 'slider',
-              start: 0,
-              end: 100
-            },
-            {
-              type: 'inside',
-              start: 0,
-              end: 100
-            }
-          ],
-          series: [
-            {
-              type: 'line',
-              serierLayoutBy: 'row',
-              smooth: true,
-              symbol: 'none'
-            },
-            {
-              type: 'line',
-              serierLayoutBy: 'row',
-              smooth: true,
-              symbol: 'none'
-            },
-            {
-              type: 'line',
-              serierLayoutBy: 'row',
-              smooth: true,
-              symbol: 'none'
-            },
-            {
-              type: 'line',
-              serierLayoutBy: 'row',
-              smooth: true,
-              symbol: 'none'
-            },
+          yAxis: [{ gridIndex: 0 }],
+          dataZoom: [{ type: 'slider', start: 0, end: 100 }, { type: 'inside', start: 0, end: 100 }],
+          series: [{ type: 'line', serierLayoutBy: 'row', smooth: true, symbol: 'none'},
+            { type: 'line', serierLayoutBy: 'row', smooth: true, symbol: 'none' },
+            { type: 'line', serierLayoutBy: 'row', smooth: true, symbol: 'none' },
+            { type: 'line', serierLayoutBy: 'row', smooth: true, symbol: 'none' },
           ]
         };
         myechart.setOption(option);

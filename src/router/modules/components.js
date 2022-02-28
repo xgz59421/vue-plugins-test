@@ -1,4 +1,5 @@
 import Layout from '@/layout/index.vue'
+import emptyView from '@/layout/emptyView.vue'
 
 const routes = {
     index: 2,
@@ -23,6 +24,11 @@ const routes = {
         component: () => import('@/views/components/xlsx.vue')
       },
       {
+        path: '/handsontable',
+        name: 'handsontable',
+        component: () => import('@/views/components/handsontable.vue')
+      },
+      {
         path: '/slicksort',
         name: '拖拽排序组件',
         component: () => import('@/views/components/vue-slicksort.vue')
@@ -34,14 +40,21 @@ const routes = {
         component: () => import('@/views/components/vue-splitpane.vue')
       },
       {
-        path: '/qrcodejs2',
-        name: 'qrcodejs2',
-        component: () => import('@/views/components/qrcodejs2.vue')
-      },
-      {
-        path: '/vue-qr',
-        name: 'vue-qr',
-        component: () => import('@/views/components/vue-qr.vue')
+        path: '/qrcode',
+        name: '二维码',
+        component: emptyView,
+        children: [
+          {
+            path: '/qrcodejs2',
+            name: 'qrcodejs2',
+            component: () => import('@/views/components/qrcode/qrcodejs2.vue')
+          },
+          {
+            path: '/vue-qr',
+            name: 'vue-qr',
+            component: () => import('@/views/components/qrcode/vue-qr.vue')
+          },
+        ]
       },
       {
         path: '/vue-pdf',
