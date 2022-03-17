@@ -4,7 +4,8 @@
       <li>当前时间: {{curDate}}</li>
       <li>当前日期: {{curDate.year()}}-{{curDate.month()}}-{{curDate.date()}}</li>
       <li>format: {{curDate.format('YYYY-MM-DD')}}</li>
-      <li>format: {{moment('082000', 'hmm').format('HH:mm')}}</li>
+      <li>082000 format: {{moment('082000', 'hmm').format('HH:mm')}}</li>
+      <li>202203162133 format: {{moment('202203162133', 'YYYYMMDDHHmmss').format('YYYY-MM-DD HH:mm')}}</li>
       <li>星期: {{curDate.day()}}</li>
       <li>时间: {{curDate.hour()}}:{{curDate.minute()}}:{{curDate.second()}}</li>
       <li>add: {{curDate.add(1, 'days').format('YYYY-MM-DD')}}</li>
