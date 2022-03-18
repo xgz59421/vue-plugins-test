@@ -6,21 +6,25 @@ const routes = {
   component: Layout,
   name: 'echarts',
   children: [{
-    path: '/line',
-    name: 'line',
-    component: () => import('@/views/echarts/line.vue')
+    path: '/line-toolbox',
+    name: 'line-toolbox',
+    component: () => import('@/views/echarts/line-toolbox.vue')
+  },{
+    path: '/line-dataset',
+    name: 'line-dataset',
+    component: () => import('@/views/echarts/line-dataset.vue')
   }, {
     path: '/bar',
     name: 'bar',
     component: () => import('@/views/echarts/bar.vue')
   }, {
+    path: '/pie-rich',
+    name: 'pie-rich',
+    component: () => import('@/views/echarts/pie-rich.vue')
+  }, {
     path: '/map',
     name: 'map',
     component: () => import('@/views/echarts/map.vue')
-  }, {
-    path: '/report',
-    name: 'report',
-    component: () => import('@/views/echarts/example-report.vue')
   }]
 }
 

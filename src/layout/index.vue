@@ -1,8 +1,8 @@
 <template>
   <!-- 外层容器 -->
-  <el-container style="border: 1px solid #eee">
+  <el-container class="container">
     <!-- 侧边栏容器 -->
-    <app-aside/>
+    <app-aside />
     <el-container>
       <!-- 顶栏容器 -->
       <el-header style="text-align: right; font-size: 12px">
@@ -18,40 +18,45 @@
       </el-header>
       <!-- 主要区域容器 -->
       <el-main>
-        <router-view/>
+        <router-view />
       </el-main>
     </el-container>
   </el-container>
 </template>
 
 <script>
-import AppAside from './app-aside.vue'
-export default {
-  name: "",
-  components: {
-    AppAside
-  },
-  props: {},
-  data() {
-    return {
-      
-    }
-  },
-  computed: {},
-  watch: {},
-  created() {},
-  mounted() {},
-  methods: {},
-};
+  import AppAside from './app-aside.vue'
+  export default {
+    name: "",
+    components: {
+      AppAside
+    },
+    props: {},
+    data() {
+      return {
+
+      }
+    },
+    computed: {},
+    watch: {},
+    created() {},
+    mounted() {},
+    methods: {},
+  };
 </script>
 
 <style scoped>
+  .container {
+    border: 1px solid #eee;
+    height: 100%;
+  }
+
   .el-header {
     background-color: #B3C0D1;
     color: #333;
     line-height: 60px;
   }
-  
+
   .el-aside {
     color: #333;
   }
