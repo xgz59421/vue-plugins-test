@@ -12,6 +12,11 @@ const routes = {
         component: () => import('@/views/plugins/i18n.vue')
       },
       {
+        path: '/font-awesome',
+        name: 'font-awesome',
+        component: () => import('@/views/plugins/font-awesome.vue')
+      },
+      {
         path: '/mock',
         name: 'mock',
         component: () => import('@/views/plugins/mock.vue')

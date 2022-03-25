@@ -9,6 +9,9 @@
     "plop": "plop"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
     "@handsontable/vue": "^11.1.0",
     "axios": "^0.22.0",
     "core-js": "^3.6.5",
