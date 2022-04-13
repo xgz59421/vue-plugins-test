@@ -19,6 +19,11 @@ const routes = {
         component: () => import('@/views/components/fileDownload.vue')
       },
       {
+        path: '/wordlimit',
+        name: 'wordlimit',
+        component: () => import('@/views/components/wordlimit.vue')
+      },
+      {
         path: '/xlsx',
         name: 'xlsx',
         component: () => import('@/views/components/xlsx.vue')
