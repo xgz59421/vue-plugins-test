@@ -2,6 +2,10 @@
   <div class=''>
     <ul>
       <li>
+        <span>本地</span>
+        <el-button type="primary" @click="localdownload()">本地下载</el-button>
+      </li>
+      <li>
         <span>blob</span>
         <el-button type="primary" @click="download(text, txt)">下载txt</el-button>
         <el-button type="success" @click="download(text, word)">下载doc</el-button>
@@ -42,9 +46,15 @@
       }
     },
     mounted() {
-      console.log(JSZip);
+      // console.log(JSZip);
     },
     methods: {
+      localdownload() {
+        let a = document.createElement('a')
+        a.href = '/doc/test.xls'
+        a.download = 'test.xls'
+        a.click()
+      },
       download(data, type) {
         // data 文件流
         // type 文件类型

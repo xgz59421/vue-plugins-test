@@ -6,32 +6,33 @@
     </div> -->
     <!-- <router-view/> -->
     <keep-alive>
-      <router-view v-if="$route.meta.keepAlive"/>
+      <router-view v-if="$route.meta.keepAlive" />
     </keep-alive>
-      <router-view v-if="!$route.meta.keepAlive"/>
+    <router-view v-if="!$route.meta.keepAlive" />
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-    }
-  },
-  mounted() {
-    // axios test
-    // this.$http.get('http://jsonplaceholder.typicode.com/users')
-    // .then(res => {
-    //   console.log(res)
-    // })
-    // .catch(err => {
-    //   console.error(err); 
-    // })
+  import i18n from '@utils/i18n/index.js'
+  export default {
+    data() {
+      return {}
+    },
+    mounted() {
+      console.log('i18n==', i18n)
+      // axios test
+      // this.$http.get('http://jsonplaceholder.typicode.com/users')
+      // .then(res => {
+      //   console.log(res)
+      // })
+      // .catch(err => {
+      //   console.error(err); 
+      // })
 
-    
 
-  },
-}
+
+    },
+  }
 </script>
 
 <style lang="less"></style>
