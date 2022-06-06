@@ -30,6 +30,11 @@ const routes = {
         path: '/dayjs',
         name: 'dayjs',
         component: () => import('@/views/plugins/dayjs.vue')
+      },
+      {
+        path: '/encrypt',
+        name: 'md5-aes',
+        component: () => import('@/views/plugins/encrypt.vue')
       }
     ]
   }
