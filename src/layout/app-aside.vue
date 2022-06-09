@@ -7,11 +7,11 @@
         <template slot="title"><i class="el-icon-menu"></i>{{level1.name}}</template>
         <div v-for="level2 in level1.children" :key="level2.name">
           <!-- 二级标题 无子标题-->
-          <el-menu-item v-if="!level2.children" :index="level2.path">
+          <el-menu-item v-if="(!level2.children)&&(level2.hidden!=true)" :index="level2.path">
             <template><i class="el-icon-setting"></i><span slot="title">{{level2.name}}</span></template>
           </el-menu-item>
           <!-- 二级标题 有子标题 -->
-          <el-submenu v-else :index="level2.path">
+          <el-submenu v-if="level2.children" :index="level2.path">
             <template slot="title"><i class="el-icon-setting"></i><span slot="title">{{level2.name}}</span></template>
             <!-- 三级标题 -->
             <el-menu-item v-for="level3 in level2.children" :key="level3.name" :index="level3.path">
