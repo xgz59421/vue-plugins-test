@@ -1,6 +1,6 @@
 <template>
   <el-button v-bind="$attrs" v-on="$listeners">
-    <slot></slot>
+    <slot><p>默认按钮</p></slot>
   </el-button>
 </template>
 
